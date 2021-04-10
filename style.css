@@ -4,47 +4,48 @@
   box-sizing: border-box;
 }
 
-.list {
+main {
   width: 960px;
-  margin: 50px 100px;
-  text-align: left;
-  line-height: 32px;
+  margin: 50px auto;
+}
+
+.list {
+  margin-bottom: 50px;
+}
+
+.list-content {
+  padding: 20px;
+  list-style: none;
 }
 
 .list-content:nth-child(odd) {
-  height: 70px;
-  padding: 20px 20px;
   background-color: #e7e5e5;
 }
 
-.list-content:nth-child(even) {
-  height: 70px;
-  padding: 20px 20px;
-  background-color: #fff;
-}
-
 .box {
-  width: 960px;
   display: flex;
   flex-wrap: wrap;
-  margin: 50px 100px;
 }
 
 .box-content {
   width: 30%;
   height: 200px;
-  margin:  0 5% 40px 0;
+  margin: 0 5% 40px 0;
   background-color: yellow;
 }
 
-.box-content:nth-child(1) {
+.box-content:first-child,
+.box-content:nth-child(5),
+.box-content:last-child {
   background-color: orange;
 }
 
-.box-content:nth-child(5) {
-  background-color: orange;
+.box-content:nth-child(3n) {
+  /* 3の倍数の時のみ適用、右のマージン不要！*/
+  margin-right: 0;
 }
 
-.box-content:nth-child(9) {
-  background-color: orange;
+.box-content:nth-last-child(-n + 3) {
+  /* 最後から数えて3つまで全て適用*/
+  margin-bottom: 0;
 }
