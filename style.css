@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.list {
+  width: 960px;
+  margin: 50px 100px;
+  text-align: left;
+  line-height: 32px;
+}
+
+.list-content:nth-child(odd) {
+  height: 70px;
+  padding: 20px 20px;
+  background-color: #e7e5e5;
+}
+
+.list-content:nth-child(even) {
+  height: 70px;
+  padding: 20px 20px;
+  background-color: #fff;
+}
+
+.box {
+  width: 960px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 50px 100px;
+}
+
+.box-content {
+  width: 30%;
+  height: 200px;
+  margin:  0 5% 40px 0;
+  background-color: yellow;
+}
+
+.box-content:nth-child(1) {
+  background-color: orange;
+}
+
+.box-content:nth-child(5) {
+  background-color: orange;
+}
+
+.box-content:nth-child(9) {
+  background-color: orange;
+}
